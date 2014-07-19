@@ -25,7 +25,7 @@
     </thead>
     <tbody>
     <% @variants.each do |variant| %>
-      <tr id="<%= spree_dom_id variant %>" <%= 'style="color:red;"' if variant.deleted? %> data-hook="variants_row" class="<%= cycle('odd', 'even')%>">
+      <tr id="<%= spree_dom_id variant %>" <%= 'style="color:red;"' if variant.deleted? %> data-hook="product_variants_row" class="<%= cycle('odd', 'even')%>">
         <td class="no-border">
           <span class="handle"></span>
         </td>
